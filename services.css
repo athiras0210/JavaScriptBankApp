@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS for Navigation */
+.navbar {
+    background-color: #008cba;
+    /* Blue color for the navbar */
+}
+
+.navbar-brand {
+    color: #fff;
+    /* White color for the brand text */
+    font-weight: bold;
+    /* Make the brand text bold */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    /* White color for the nav links */
+    font-weight: bold;
+    /* Make the nav links bold */
+    transition: 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #005f73;
+    /* Darker shade of blue on hover */
+}
+
+#heading {
+    font-weight: 600;
+    color: #fff;
+    background-color: #53789b;
+    border-radius: 40px;
+}
+
+.bank {
+    height: 25vw;
+    border-radius: 20px;
+    background: rgba(104, 101, 101, 0.533);
+    box-shadow: 0 4px 30px rgba(34, 34, 34, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.803);
+}
+
+h3,
+p {
+    color: #bdcdcf;
+}
+
+.background-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    /* Adjust the opacity value as needed */
+}
+
+@media only screen and (max-width: 768px) {
+    #section {
+        flex-direction: column;
+        align-items: center;
+        top: 10vh;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bank {
+        width: 80%;
+        margin: 5% 0;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .background-image {
+        height: 120vh
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    #heading {
+        width: 90vw;
+    }
+
+    .bank {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .background-image {
+        height: 120vh
+    }
+    
+}

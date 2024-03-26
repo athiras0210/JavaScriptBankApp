@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS for Navigation */
+.navbar {
+    background-color: #008cba; /* Blue color for the navbar */
+}
+
+.navbar-brand {
+    color: #fff; /* White color for the brand text */
+    font-weight: bold; /* Make the brand text bold */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White color for the nav links */
+    font-weight: bold; /* Make the nav links bold */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #005f73; /* Darker shade of blue on hover */
+}
+
+/* Change button color */
+.btn-primary {
+    background-color: #008cba; /* Match the navbar color */
+    border-color: #008cba; /* Match the border color */
+}
+
+.btn-primary:hover {
+    background-color: #005f73; /* Darker shade of blue on hover */
+    border-color: #005f73; /* Match the border color on hover */
+}
+
+/* Remove horizontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+.login-container {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h3 {
+    color: #343a40;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.login-container input[type="text"]::placeholder,
+.login-container input[type="password"]::placeholder {
+    color: #adb5bd;
+}
+
+.login-container button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container a {
+    color: #6c757d;
+}
+
+.login-container a:hover {
+    color: #495057;
+}
+
+@media (max-width: 767px) {
+    #sgup {
+        display: none; /* Hide the image on screens smaller than 768px */
+    }
+}

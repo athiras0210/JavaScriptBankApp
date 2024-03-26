@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom CSS for Navigation */
+.navbar {
+    background-color: #008cba;
+    /* Blue color for the navbar */
+}
+
+.navbar-brand {
+    color: #fff;
+    /* White color for the brand text */
+    font-weight: bold;
+    /* Make the brand text bold */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    /* White color for the nav links */
+    font-weight: bold;
+    /* Make the nav links bold */
+    transition: 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #005f73;
+    /* Darker shade of blue on hover */
+}
+
+.navbar-icon {
+    margin-right: 5px;
+    /* Add some spacing between the icon and the brand text */
+}
+
+.online-banking-heading,
+#sec2 h3.text-primary {
+    color: #005f73;
+    /* Same color for the headings in sec1 and sec2 */
+}
+
+/* Change button color */
+.btn-primary {
+    background-color: #008cba;
+    /* Match the navbar color */
+    border-color: #008cba;
+    /* Match the border color */
+}
+
+.btn-primary:hover {
+    background-color: #005f73;
+    /* Darker shade of blue on hover */
+    border-color: #005f73;
+    /* Match the border color on hover */
+}
+
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+
+    #imggif,
+    #img2 {
+        max-width: 100%;
+        /* Set the maximum width to 100% */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+    #logout{
+        margin-top:10px;
+    }
+}
+
+/* Remove horizontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure section content fits within container */
+#sec2 {
+    overflow-x: hidden;
+}
+
+/* Reduce width of text */
+#sec2 .col-md-6 {
+    max-width: 400px;
+    /* Set the maximum width of the column */
+}
+
+#sec2 .col-md-6 p {
+    margin-right: auto;
+    /* Align text to the left */
+    margin-left: auto;
+    /* Align text to the left */
+}

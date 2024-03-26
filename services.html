@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Font Awesome -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-university navbar-icon"></i> FinanceHub</a> <!-- Bank icon -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="logout">
+                <a href="./login.html" class="btn btn-danger">Sign Out</a>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="background-image" style="background-image: url(https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?t=st=1711476430~exp=1711480030~hmac=dd7ad76694f075301ee1f846a26d589151142c4e3c529a85cf0c4b646441334d&w=996); min-height: 91vh; height: auto;">
+        <div id="section" class="container d-flex justify-content-center align-items-center p-1">
+            <h2 id="welcome" class="text-light fw-bold mt-5 p-2 mb-2" >Welcome <span id="un" class="ms-2">User</span></h2>
+        </div>
+
+        <div class="container-md text-center  mb-4 shadow">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="balance-box bg-light p-2 rounded"  style="border: 1px solid blue; border-radius: 15px !important;">
+                        <p id="accBal" class="text-dark mb-0 fs-5" style="font-size: 1.25rem;">Acccount Balance : 1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container pb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-5 mb-4 mb-md-0"> <!-- Added margin bottom for small screens -->
+                    <div class="border rounded p-3" style="background-color: rgb(9, 89, 151); border-radius: 25px !important;">
+                        <h3 class="text-center fw-bold text-light mt-2">Deposit</h3>
+                        <input type="text" class="form-control mt-5 rounded-pill shadow-sm input-width" id="damt" placeholder="Enter the Amount">
+                        <input type="password" class="form-control mt-4 rounded-pill shadow-sm input-width" id="dpswd" placeholder="Enter your Password">
+                        <div class="text-center mt-4">
+                            <button onclick="deposit()" class="btn btn-success w-50 rounded-pill mb-3 shadow">Deposit</button>
+                            <p id="dbal"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <div class="border rounded p-3" style="background-color: rgb(9, 89, 151); border-radius: 25px !important">
+                        <h3 class="text-center fw-bold text-light mt-2">Withdraw</h3>
+                        <input type="text" class="form-control mt-5 rounded-pill shadow-sm input-width" id="wamt" placeholder="Enter the Amount">
+                        <input type="password" class="form-control mt-4 rounded-pill shadow-sm input-width" id="wpswd" placeholder="Enter your Password">
+                        <div class="text-center mt-4">
+                            <button onclick="withdraw()" class="btn btn-danger w-50 rounded-pill mb-3 shadow">Withdraw</button>
+                            <p id="wbal"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section (if exists) -->
+
+</body>
+
+</html>
